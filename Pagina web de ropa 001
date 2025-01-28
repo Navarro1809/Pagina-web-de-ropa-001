@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ropa Moderna</title>
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #f4f4f4;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #f4f4f4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        .banner {
+            background-image: url('https://via.placeholder.com/1200x400'); /* Reemplaza con tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .banner h2 {
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .product {
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-info p {
+            margin-bottom: 10px;
+            color: #bbb;
+        }
+
+        .product-info button {
+            background-color: #ff6347;
+            border: none;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-info button:hover {
+            background-color: #ff4500;
+        }
+
+        footer {
+            background-color: #333;
+            color: #bbb;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #ff6347;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ropa Moderna</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Colecciones</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h2>¡Explora las últimas tendencias!</h2>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400" alt="Producto 1">
+            <div class="product-info">
+                <h3>Camisa Básica</h3>
+                <p>Color: Negro</p>
+                <p>Desde $25.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400" alt="Producto 2">
+            <div class="product-info">
+                <h3>Pantalón Estilizado</h3>
+                <p>Color: Gris</p>
+                <p>Desde $30.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300x400" alt="Producto 3">
+            <div class="product-info">
+                <h3>Chaqueta de Cuero</h3>
+                <p>Color: Marrón</p>
+                <p>Desde $70.00</p>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ropa Moderna</p>
+        <p><a href="#">Política de privacidad</a> | <a href="#">Términos de servicio</a></p>
+    </footer>
+
+    <script>
+        // Ejemplo de interactividad: resaltar botón al hacer clic
+        document.querySelectorAll('.product-info button').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Producto agregado al carrito');
+            });
+        });
+    </script>
+
+</body>
+</html>
